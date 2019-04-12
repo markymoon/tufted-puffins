@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Player from './components/player'
-import Gallery from './components/image-gallery'
+import Player from './components/player/player'
+import Gallery from './components/image-gallery/image-gallery'
+import Navbar from './components/navbar/navbar'
 import './App.css'
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Navbar />
         <header className="App-header">
           <button type="button" onClick={toggleTabs}>{ isGalleryOpened ? 'Hide' : 'Show' } Photo Gallery</button>
 
